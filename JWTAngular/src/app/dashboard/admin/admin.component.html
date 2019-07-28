@@ -1,0 +1,9 @@
+<p>admin works!</p>
+<button (click)="onClick()">GetBooks</button>
+<ul>
+    <li *ngFor="let post of books">
+     
+     <span class="badge">{{post.Id}}</span> 
+     <span class="badge">{{post.Name}}</span> 
+    </li>
+  </ul>

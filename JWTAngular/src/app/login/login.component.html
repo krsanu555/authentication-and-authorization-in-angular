@@ -1,0 +1,34 @@
+<div [hidden]="submitted">
+  <h3>Login</h3>
+ 
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)" class="col-12">
+    <div class="form-row">
+      <label for="nameuser" class="col-sm-2 col-form-label">UserName</label>
+      <input type="text" required class="form-control col-sm-10" id="nameuser" placeholder="enter your username"
+        formControlName="username">
+    </div>
+    <div class="form-row">
+      <label for="passworduser" class="col-sm-2 col-form-label">Password</label>
+      <input type="password" id="passworduser" placeholder="enter your password" class="form-control col-sm-10"
+        formControlName="password" required minlength="5">
+    </div><br>
+    
+    <div class="form-row">
+    <button class="btn btn-default col-sm-2" type="submit" [disabled]="!loginForm.valid">Login</button>
+    </div>
+    
+  </form>
+  
+</div>
+<div class="form-row"> 
+  {{error}}
+  </div>
+
+<!-- <div *ngIf="messageService.messages.length">
+
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="messageService.clear()">clear</button>
+  <div *ngFor='let message of messageService.messages'> {{message}} </div>
+
+</div> -->
