@@ -12,7 +12,6 @@ const routes: Routes = [
     component: DashboardComponent,
     canActivate: [AuthGuard],
     children: [
-     // { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'admin', component: AdminComponent,canActivate:[RoleGuard],data: {role: 'admin'}},
       { path: 'student', component: StudentComponent,canActivate: [RoleGuard],
     data: {role: 'student'}},
@@ -24,7 +23,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class DashboardRoutingModule { }
