@@ -32,9 +32,7 @@ dotnet run
 
 # Meta
 
-Kumar Sanu – @kumarsanu805128 – krsanurajput@outlook.com
-
-Distributed under the XYZ license. See LICENSE for more information.
+Kumar Sanu – @krsanu555[https://github.com/krsanu555] – krsanu555@gmail.com
 
 https://github.com/krsanu555/AuthenticationAuthorization
 
