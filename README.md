@@ -32,7 +32,7 @@ dotnet run
 
 # Meta
 
-Kumar Sanu – @krsanu555[https://github.com/krsanu555] – krsanu555@gmail.com
+Kumar Sanu[https://github.com/krsanu555]
 
 https://github.com/krsanu555/AuthenticationAuthorization
 
